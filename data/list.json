@@ -1,0 +1,46 @@
+{
+    "type": [
+            null,
+            "npc",
+            "object",
+            "item",
+            "itemset",
+            "quest",
+            "spell",
+            "zone",
+            "faction",
+            "pet",
+            "achievement",
+            "title",
+            "event",
+            "class",
+            "race",
+            "skill",
+            "statistic",
+            "currency",
+            null,
+            null,
+            "building",
+            "follower",
+            "garrisonability",
+            "mission",
+            null,
+            "ship",
+            "threat"
+        ],
+    "faction": [
+        "alliance-icon.png",
+        "horde-icon.png",
+        "both-icon.png"
+        ],
+    "quality": [
+            "poor",
+            "common",
+            "uncommon",
+            "rare",
+            "epic",
+            "legendary",
+            "artifact",
+            "heirloom"
+        ]
+}
