@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>zmin.wowhead</string>
+	<key>connections</key>
+	<dict>
+		<key>786B6022-D6BF-475A-B680-EDCF6C0DEB07</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>10E0D82D-9282-4FAB-8242-ADEA4628E840</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>F1FE6A44-41F5-4B49-8711-398A3B7AD2D9</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>1B124D65-C515-4D7D-884C-509E95E0E4E2</string>
+				<key>modifiers</key>
+				<integer>131072</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Owen Min</string>
+	<key>description</key>
+	<string></string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>wowhead</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>#!/usr/bin/python
+
+from open import open_url
+
+if __name__=="__main__":
+    open_url("{query}", 0)</string>
+				<key>type</key>
+				<integer>3</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>10E0D82D-9282-4FAB-8242-ADEA4628E840</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>keyword</key>
+				<string>wow</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>1</integer>
+				<key>queuemode</key>
+				<integer>2</integer>
+				<key>runningsubtext</key>
+				<string>Searching...</string>
+				<key>script</key>
+				<string>#!/usr/bin/python
+
+from main import Main
+
+if __name__=="__main__":
+    main = Main("{query}")
+    main.execute()</string>
+				<key>title</key>
+				<string>Search wowhead.com</string>
+				<key>type</key>
+				<integer>3</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>786B6022-D6BF-475A-B680-EDCF6C0DEB07</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>#!/usr/bin/python
+
+from open import open_url
+
+if __name__=="__main__":
+    open_url("{query}", 1)</string>
+				<key>type</key>
+				<integer>3</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>F1FE6A44-41F5-4B49-8711-398A3B7AD2D9</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>#!/usr/bin/python
+
+from open import open_url
+
+if __name__=="__main__":
+    open_url("{query}", 2)</string>
+				<key>type</key>
+				<integer>3</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>1B124D65-C515-4D7D-884C-509E95E0E4E2</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>10E0D82D-9282-4FAB-8242-ADEA4628E840</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>1B124D65-C515-4D7D-884C-509E95E0E4E2</key>
+		<dict>
+			<key>ypos</key>
+			<real>230</real>
+		</dict>
+		<key>786B6022-D6BF-475A-B680-EDCF6C0DEB07</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>F1FE6A44-41F5-4B49-8711-398A3B7AD2D9</key>
+		<dict>
+			<key>ypos</key>
+			<real>110</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string></string>
+</dict>
+</plist>
